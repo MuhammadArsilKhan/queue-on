@@ -86,6 +86,7 @@ $(".english").click(function(){
 
 
   window.onload = function () {
+    $("#english").css('display', 'block');
     if (localStorage.getItem("isArabicSelected") == '1') {
         $("#arabic").css('display', 'block');
         $("#english").css('display', 'none');
@@ -94,5 +95,6 @@ $(".english").click(function(){
         $("#arabic").css('display', 'none');
         $("#english").css('display', 'block');
     }
+    
     
 }
