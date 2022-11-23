@@ -1,0 +1,341 @@
+:root {
+    font-size: 14px;
+}
+::placeholder {
+    color: #79729A;
+    opacity: 1;
+}
+:-ms-input-placeholder {
+    color: #79729A;
+}
+::-ms-input-placeholder {
+    color: #79729A;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #191339 !important;
+    line-height: 24px !important;
+    color:#CAC7DA !important;
+    font-weight: 400 !important;
+}
+
+ul { list-style: none; }
+a, a:hover {
+    text-decoration: none !important;
+}
+a {
+    color: inherit !important;
+}
+.border-none {
+    border: none !important;
+}
+.bg-transparent {
+    background: transparent !important;
+}
+.list-disc {
+    list-style-type: disc;
+}
+.video {
+    height: 15em; 
+    width: 100%;
+}
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 300px;
+    background: #0E0923;
+    color: #FFFFFF;
+    z-index: 5;
+    transition: all .5s;
+    margin-left: -350px;
+    overflow-y: auto;
+}
+.nav.active {
+    margin-left: 0;
+}
+.nav-toggle:before {
+    content: url("data:image/svg+xml,%3Csvg width='24' height='21' viewBox='0 0 24 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M24 3H0V0H24V3Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M24 12H0V9H24V12Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M24 21H0V18H24V21Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+.nav-close:before {
+    content: url("data:image/svg+xml,%3Csvg width='19' height='19' viewBox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18.9999 2.11114L2.1111 19L0 16.8889L16.8888 2.47078e-05L18.9999 2.11114Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.39324e-05 2.11114L16.8889 19L19 16.8889L2.11119 2.47078e-05L8.39324e-05 2.11114Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+.nav-overlay {
+    transition: all .5s;
+}
+.nav-overlay.active {
+    background: rgba(25, 19, 57, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+.nav a.active {
+    color: #DB7CF7 !important;
+}
+.btn-main {
+    outline: none;
+    border: none;
+    color: #FFFFFF !important;
+    background: linear-gradient(94.6deg, #6B1AD3 2.36%, #DB7CF7 98.94%) !important;
+}
+.btn-main:hover, 
+.btn-main:focus, 
+.btn-main:active {
+    background: linear-gradient(94.6deg, #4f10a1 2.36%, #b760d1 98.94%) !important;
+}
+
+.btn-second {
+    outline: none;
+    border: none;
+    color: #DB7CF7 !important;
+    background:  #2B2256;
+}
+.btn-second:hover, 
+.btn-second:focus, 
+.btn-second:active {
+    background:  #201942 !important;
+}
+.mesh-gradient {
+    background: url('../assets/img/mesh.png') no-repeat center center;
+    background-size: cover;
+}
+.mesh-bottom-absolute {
+    position: relative;
+}
+.mesh-bottom-absolute:after {
+    content: url('../assets/img/mesh.png');
+    bottom: -20rem;
+    right: -20rem;
+    position: absolute;
+    z-index: 0;
+}
+.mesh-back-absolute {
+    position: relative;
+}
+.mesh-back-absolute:after {
+    content: '';
+    width: 200px;
+    height: 200px;
+    background: #A826CD;
+    border-radius: 50%;
+    bottom: -5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: -1;
+    filter: blur(50px);
+}
+.circle-team {
+    display: inline-block;
+    padding: 50px;
+    box-sizing: content-box;
+    border-radius: 50%;
+    background: linear-gradient(94.6deg, #6B1AD3 2.36%, #DB7CF7 98.94%);
+    box-shadow: 0px 0px 146px 30px rgba(181, 10, 255, 0.52);
+}
+.mh-why {
+    min-height: 17em;
+}
+.form-subscribe {
+    position: relative;
+}
+.form-subscribe input {
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background: #433B6C;
+    width: 100%;
+    color: #FFFFFF;
+}
+.form-subscribe input:focus {
+    box-shadow: 0px 0px 5px rgb(219, 124, 247, .71);
+}
+.form-subscribe button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.form-subscribe-arabic {
+    position: relative;
+}
+.form-subscribe-arabic input {
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background: #433B6C;
+    width: 100%;
+    color: #FFFFFF;
+}
+.form-subscribe-arabic input:focus {
+    box-shadow: 0px 0px 5px rgb(219, 124, 247, .71);
+}
+.form-subscribe-arabic button {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.bg-footer {
+    background: #0C0820;
+}
+.bg-copy {
+    background: #040211;
+}
+.form-contact input, .form-contact textarea {
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background: #8B40EB;
+    width: 100%;
+    color: #FFFFFF;
+}
+.form-contact input::placeholder, .form-contact textarea::placeholder {
+    color: #CAC7DA;
+    opacity: 1;
+}
+.form-contact input:-ms-input-placeholder, .form-contact textarea::-ms-input-placeholder {
+    color: #CAC7DA;
+}
+.form-contact input::-ms-input-placeholder, .form-contact textarea::-ms-input-placeholder {
+    color: #CAC7DA;
+}
+
+/* `sm` applies to small devices (landscape phones, less than 576px) */
+@media (min-width: 576px) {
+    .mesh-gradient {
+        background-size: 100%;
+    }
+    .video {
+        height: 17em;
+    }
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (min-width: 768px) {
+    .navigation {
+        overflow-y: auto;
+    }
+    .video {
+        height: 20em;
+    }
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (min-width: 992px) {
+    :root {
+        font-size: 16px;
+    }
+    .nav { 
+        position: relative;
+        margin-left: 0;
+        display: block;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        background: transparent;
+        transition: all .5s;
+    }
+    .nav.sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 1em 2em .5em;
+        background: #0E0923;
+    }
+    .nav-overlay.active {
+        display: none;
+        position: relative;
+        background: transparent;
+    }
+    .logo-lg {
+        float: left;
+    }
+    .menu-lg {
+        float: right;
+    }
+    .menu-lg li {
+        display: inline-block;
+        padding: 0px 5px;
+    }
+    .mh-why {
+        min-height: 13em;
+    }
+    .w-lg-logo {
+        width: 150px !important;
+    }
+    .mesh-gradient {
+        background-size: 100% 100%;
+    }
+    .form-contact {
+        margin-top: -10em;
+    }
+    .circle-team {
+        padding: 70px;
+    }
+    .circle-team img {
+        width: 110px;
+    }
+    .video {
+        height: 25em;
+    }
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    .menu-lg li {
+        display: inline-block;
+        padding: 0px 16px;
+    }
+    .form-contact {
+        margin-top: -20em;
+    }
+    .mesh-back-absolute:after {
+        width: 400px;
+        height: 400px;
+        filter: blur(80px);
+        bottom: -8em;
+    }
+}
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1220px;
+        padding: 0;
+    }
+    .menu-lg li {
+        display: inline-block;
+    }
+    .mesh-gradient { 
+        background-size: 100%;
+    }
+    .form-subscribe input {
+        padding: 24px;
+    }
+    .form-subscribe-arabic input {
+        padding: 24px;
+    }
+}
+
+/* `xxxl` applies to x-large devices (large desktops, less than 1900px) */
+@media (min-width: 1900px) {
+    .container {
+        max-width: 1220px;
+    }
+    
+}
+
+#arabic{
+    display: none;
+}
+#english{
+    display: none;
+}
